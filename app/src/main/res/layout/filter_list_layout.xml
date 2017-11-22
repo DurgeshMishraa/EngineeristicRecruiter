@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/search_block_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/search_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/filter_search" />
+
+        <EditText
+            android:id="@+id/edit_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:hint="@string/search_by_farea_lbl"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+
+            android:textColor="#757575"
+            android:textColorHint="#757575"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:textSize="14sp" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider_view"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/filter_edittext_color" />
+
+    <ListView
+        android:id="@+id/filter_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:divider="@color/filter_edittext_color"
+        android:dividerHeight="0.5dp">
+    </ListView>
+
+</LinearLayout>

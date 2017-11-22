@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_parent_downloadresume"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/separator_color_code">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_downloadresume"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_actionbar_height"
+        android:paddingRight="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/back_cmd_downloadresume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="0dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/toolbar_backicon_clr"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/ttl_text_downloadresume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:text=""
+                android:textColor="@color/title_text_clr"
+                android:textSize="17sp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="80dp"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/ttl_text_refreshdownload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/toolbar_backicon_clr"
+                android:textSize="22sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="5dp"/>
+
+
+            <!--<TextView
+                android:id="@+id/ttl_text_sharedownload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/toolbar_backicon_clr"
+                android:textSize="22sp"
+                android:layout_centerVertical="true"
+                android:paddingRight="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentRight="true"/>-->
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ProgressBar
+        android:id="@+id/firstBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_downloadresume"
+        android:layout_marginBottom="-6dp"
+        android:layout_marginTop="-5dp"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/green_clr"
+        android:indeterminateTintMode="src_in"
+        android:maxHeight="20dp"
+        android:visibility="visible" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/firstBar"
+        android:layout_marginTop="0dp"
+        android:fadeScrollbars="true"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbarThumbVertical="@null"
+        android:scrollbars="none" />
+
+</RelativeLayout>

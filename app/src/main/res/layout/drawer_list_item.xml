@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="15dp" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:src="@null" />
+
+    <TextView
+        android:id="@+id/left_drawer_textviewid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/icon"
+        android:gravity="center_vertical"
+        android:paddingRight="40dp"
+        android:text="Items"
+        android:textColor="#181818"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/textView_chatcount"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/iv_arrowleftdrawer"
+        android:background="@drawable/green_circle"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="@color/WhiteColor"
+        android:textSize="7sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_arrowleftdrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="8dp"
+        android:contentDescription=""
+        android:src="@drawable/dm_arrow" />
+
+</RelativeLayout>

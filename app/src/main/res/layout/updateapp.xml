@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/updateapp_rel_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteColor"
+    android:padding="@dimen/activity_vertical_margin">
+
+    <RelativeLayout
+        android:id="@+id/linearLayout_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/updateapp_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout_image"
+        android:layout_marginTop="0dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/updateapp_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="Title"
+            android:textColor="#212121"
+            android:textSize="18dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/updateapp_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/updateapp_heading"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="Msg"
+            android:textColor="#757575"
+            android:textSize="16dp"
+            android:gravity="center"/>
+
+
+        <Button
+            android:id="@+id/updateapp_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/updateapp_msg"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_round_shape"
+            android:gravity="center"
+            android:layout_marginTop="50dp"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/msg_box"
+        android:layout_below="@+id/toolbar_chatactivity"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="alwaysScroll"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

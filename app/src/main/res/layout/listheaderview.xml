@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_ldhistory"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_loadhistory"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/load_msg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/WhiteColor"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView_chatHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="M"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/personal_header"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

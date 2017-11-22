@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#8b8b8b"
+        android:alpha=".20"
+        android:scaleType="fitXY" />-->
+
+    <LinearLayout
+        android:id="@+id/first_block_layout"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:orientation="vertical"
+        android:onClick="selectDrawerItem"
+        android:gravity="bottom"
+        android:background="@color/screenBgColor">
+
+        <com.engineeristic.recruiter.widget.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/profile_img"  />
+
+        <LinearLayout
+            android:id="@+id/text_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="User"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                 />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="user@engineeristic.com"
+                android:textColor="#212121"
+                android:textSize="14sp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha=".20"
+        android:background="#8b8b8b"/>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/WhiteColor"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:id="@+id/second_block_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dp"
+            android:visibility="visible"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/my_jobs"
+                style="@style/btn_stand"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:onClick="selectDrawerItem"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="16dp">
+
+                <TextView
+                    android:id="@+id/textview_jobs_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:contentDescription="Jobfeed"
+                    android:textColor="#8A000000"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/textview_jobs_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text="@string/my_jobs_lbl"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="3dp"/>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/my_profile"
+                style="@style/btn_stand"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:onClick="selectDrawerItem"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textview_profile_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="20sp"
+                    android:textColor="#8A000000"
+                    android:contentDescription="Profile" />
+
+                <TextView
+                    android:id="@+id/textview_profile_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text="@string/my_profile_lbl"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="3dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/my_Chat"
+                style="@style/btn_stand"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:onClick="selectDrawerItem"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview_mychat_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#8A000000"
+                    android:textSize="20sp"
+                    android:contentDescription="Saved" />
+
+                <TextView
+                    android:id="@+id/textview_mychat_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_weight="1"
+                    android:text="@string/my_chat_lbl"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"
+                    android:paddingBottom="0dp"
+                    android:paddingTop="3dp"/>
+
+                <TextView
+                    android:id="@+id/textView_chatcount"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/ringblack"
+                    android:gravity="center"
+                    android:text=""
+                    android:visibility="gone"
+                    android:textColor="#87000000"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:paddingBottom="0dp"
+                    android:maxLines="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/divpix"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/separator_color_code"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/third_block_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/rate_app"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                style="@style/btn_stand"
+                android:onClick="selectDrawerItem"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textview_rate_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:contentDescription="Jobfeed"
+                    android:textColor="#8A000000"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/textview_rate_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text="@string/rate_app_lbl"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/share_app"
+                style="@style/btn_stand"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:onClick="selectDrawerItem"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textview_share_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="20sp"
+                    android:textColor="#8A000000"
+                    android:contentDescription="Profile" />
+
+                <TextView
+                    android:id="@+id/textview_share_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text="@string/share_lbl"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"
+                    android:paddingTop="1dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/separator_color_code"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fourth_block_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/feedback"
+                style="@style/btn_stand"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:onClick="selectDrawerItem"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textview_feedback_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:contentDescription="Jobfeed"
+                    android:textColor="#8A000000"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/textview_feedback_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text="@string/feedback_lbl"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"
+                    android:paddingTop="1dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/change_password"
+                style="@style/btn_stand"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:onClick="selectDrawerItem"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textview_password_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textSize="20sp"
+                    android:textColor="#8A000000"
+                    android:contentDescription="Profile" />
+
+                <TextView
+                    android:id="@+id/textview_password_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:text="@string/change_password_lbl"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"
+                    android:paddingTop="5dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/logout"
+                style="@style/btn_stand"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:onClick="selectDrawerItem"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textview_logout_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="#8A000000"
+                    android:textSize="20sp"
+                    android:contentDescription="Saved"
+                    android:layout_marginBottom="5dp"/>
+
+                <TextView
+                    android:id="@+id/textview_logout_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_weight="1"
+                    android:text="@string/Logout_lbl"
+                    android:textColor="#DE000000"
+                    android:textSize="14sp"
+                    android:paddingBottom="8dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/separator_color_code"
+            android:layout_marginTop="16dp"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

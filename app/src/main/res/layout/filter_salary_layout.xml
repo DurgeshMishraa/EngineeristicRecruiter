@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp" >
+
+    <RelativeLayout
+        android:id="@+id/min_expe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:background="@color/actionbar_filter_color">
+
+        <TextView
+            android:id="@+id/min_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:text="@string/min_salary_lbl"
+            android:textColor="@color/filter_text_gray_color"
+            android:textSize="14sp" >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/min_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/down_arrow_iv01"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:text=""
+            android:textColor="@color/filter_text_gray_color"
+            android:textSize="14sp" >
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/down_arrow_iv01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/arrowdrop" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider_view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_height="1px"
+        android:background="@color/filter_edittext_color" />
+
+    <RelativeLayout
+        android:id="@+id/max_expe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="15dp"
+        android:background="@color/actionbar_filter_color">
+
+        <TextView
+            android:id="@+id/max_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:text="@string/max_salary_lbl"
+            android:textColor="@color/filter_text_gray_color"
+            android:textSize="14sp" >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/max_value_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/down_arrow_iv02"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:text=""
+            android:textColor="@color/filter_text_gray_color"
+            android:textSize="14sp" >
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/down_arrow_iv02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:src="@drawable/arrowdrop" />
+
+    </RelativeLayout>
+
+</LinearLayout>

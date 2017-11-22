@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_edu_qul"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_edu_qul_edu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        >
+
+        <!-- <ImageView
+            android:id="@+id/iv_eduImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+
+        /> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_institute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#212121"
+                android:textSize="16sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_qualifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#757575"
+                android:textSize="14sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#757575"
+                android:text=""
+                android:textSize="14sp">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/saperator_view_edu"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/new_separator_color_code"
+
+        />
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "998495162039",
+    "firebase_url": "https://engineeristic-recruiter.firebaseio.com",
+    "project_id": "engineeristic-recruiter",
+    "storage_bucket": "engineeristic-recruiter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998495162039:android:9a9e5dcdd3131c54",
+        "android_client_info": {
+          "package_name": "com.engineeristic.recruiter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998495162039-htc5nm91286ft073c20lreponvnb9348.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0F3VpbMUPR_kqW5vMQj9dQ7JHXo0QdGg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

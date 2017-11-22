@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/message_bg"
+    android:windowSoftInputMode="adjustPan">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_chatactivity"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_actionbar_height"
+        android:background="@color/colorPrimary"
+        android:paddingRight="20dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/Toolbar.TitleText">
+
+        <TextView
+            android:id="@+id/txtbackicon_chatactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="16dp"
+            android:text=""
+            android:textColor="@color/title_text_clr"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingBottom="2dp"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical">
+
+        <com.engineeristic.recruiter.widget.CircleImageView
+            android:id="@+id/imageView_recchatid"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/profile_img" />
+
+        <ImageView
+            android:id="@+id/iv_chatonlinestatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/green_circle"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="25dp"
+            />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_recdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/textView_nameRec"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="Test1"
+                    android:textColor="@color/title_text_clr"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView_linkRec"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView_nameRec"
+                    android:maxLines="2"
+                    android:text="test2"
+                    android:textColor="@color/title_text_clr"
+                    android:textSize="10sp"
+                    android:layout_marginBottom="3dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_notification_chatactivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+
+            >
+
+            <TextView
+                android:id="@+id/imageView_chatindicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/toolbar_backicon_clr"
+                android:textSize="20sp"
+                android:layout_marginTop="1dp"/>
+
+            <TextView
+                android:id="@+id/textView_occupancy"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/green_circle"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/WhiteColor"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/msg_box"
+        android:layout_below="@+id/toolbar_chatactivity"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:transcriptMode="alwaysScroll" />
+
+    <LinearLayout
+        android:id="@+id/msg_box"
+        style="@style/AppTheme.MessageBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp">
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/message_et"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/type_msg_bg"
+                android:cursorVisible="true"
+                android:ems="10"
+                android:hint="@string/send_message"
+                android:maxHeight="80dp"
+                android:padding="12dp"
+                android:textSize="14sp" />
+        </ScrollView>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/send_ic"
+            android:onClick="sendMessage" />
+    </LinearLayout>
+
+</RelativeLayout>

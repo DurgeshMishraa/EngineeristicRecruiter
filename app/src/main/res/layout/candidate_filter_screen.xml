@@ -1,0 +1,529 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenBgColor"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_actionbar_height"
+        android:background="@color/colorPrimary"
+        android:paddingRight="20dp"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextAppearance="@style/Toolbar.TitleText">
+
+        <TextView
+            android:id="@+id/back_cmd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/toolbar_backicon_clr"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ttl_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:text="Filter"
+            android:textColor="@color/title_text_clr"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/apply_cmd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/apply_lbl"
+            android:textColor="@color/title_text_clr"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingTop="4dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:background="@drawable/apply_filter_btn"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/reset_cmd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/reset_lbl"
+            android:textColor="@color/title_text_clr"
+            android:textSize="16sp" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <!--<android.support.v7.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="4dp"
+            card_view:cardCornerRadius="3dp">-->
+
+        <LinearLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="3"
+            android:background="@color/filter_tab_unsel_color"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/mainScroll"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/tab_item01"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@color/filter_tab_sel_color">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageview01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/industry_black" />
+
+                            <TextView
+                                android:id="@+id/textView01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageview01"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:includeFontPadding="false"
+                                android:text="@string/industry_lbl"
+                                android:textColor="#212121"
+                                android:textSize="14sp"></TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/budge01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="28dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/filter_apply"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tab_item02"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageview02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/functional_area_black" />
+
+                            <TextView
+                                android:id="@+id/textView02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageview02"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:includeFontPadding="false"
+                                android:text="@string/functional_lbl"
+                                android:textColor="#212121"
+                                android:textSize="14sp"></TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/budge02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="28dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/filter_apply"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tab_item03"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageview03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/experience_black" />
+
+                            <TextView
+                                android:id="@+id/textView03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageview03"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:includeFontPadding="false"
+                                android:text="@string/exp_in_yrs_lbl"
+                                android:textColor="#212121"
+                                android:textSize="14sp"></TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/budge03"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="28dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/filter_apply"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tab_item04"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageview04"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/institute_black" />
+
+                            <TextView
+                                android:id="@+id/textView04"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageview04"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:includeFontPadding="false"
+                                android:text="@string/institute_lbl"
+                                android:textColor="#212121"
+                                android:textSize="14sp"></TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/budge04"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="28dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/filter_apply"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tab_item05"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageview05"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/location_black" />
+
+                            <TextView
+                                android:id="@+id/textView05"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageview05"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:includeFontPadding="false"
+                                android:text="@string/location01_lbl"
+                                android:textColor="#212121"
+                                android:textSize="14sp"></TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/budge05"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="28dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/filter_apply"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tab_item06"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageview06"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/batch_black" />
+
+                            <TextView
+                                android:id="@+id/textView06"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageview06"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:includeFontPadding="false"
+                                android:text="@string/batch_lbl"
+                                android:textColor="#212121"
+                                android:textSize="14sp"></TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/budge06"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="28dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/filter_apply"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tab_item07"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageview07"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/salary_black" />
+
+                            <TextView
+                                android:id="@+id/textView07"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageview07"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:includeFontPadding="false"
+                                android:text="@string/salary_lbl"
+                                android:textColor="#212121"
+                                android:textSize="14sp"></TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/budge07"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="28dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/filter_apply"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tab_item08"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageview08"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/gender_black" />
+
+                            <TextView
+                                android:id="@+id/textView08"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageview08"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:includeFontPadding="false"
+                                android:text="@string/gender_lbl"
+                                android:textColor="#212121"
+                                android:textSize="14sp"></TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/budge08"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="28dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/filter_apply"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/tab_item09"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/imageview09"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/notice_period_black" />
+
+                            <TextView
+                                android:id="@+id/textView09"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/imageview09"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center_horizontal"
+                                android:includeFontPadding="false"
+                                android:text="@string/notice_period_lbl"
+                                android:textColor="#212121"
+                                android:textSize="14sp"></TextView>
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/budge09"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="28dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/filter_apply"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+<!--</android.support.v7.widget.CardView>-->
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/catagory_layout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="7"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/list_block_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

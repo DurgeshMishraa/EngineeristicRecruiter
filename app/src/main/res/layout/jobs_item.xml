@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/jobprofile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/card"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="2dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:transitionName="profile" >
+
+        <LinearLayout
+            android:id="@+id/main_perent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/ll_main_perent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingBottom="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/ll_jobCompanyDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                    <LinearLayout
+                        android:id="@+id/container_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/tv_jobCreatedDate"
+                        android:layout_toRightOf="@+id/image_jobImage"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                         >
+
+                        <TextView
+                            android:id="@+id/textView_jobDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:gravity="top"
+                            android:maxLines="2"
+                            android:text="Job Title"
+                            android:textColor="@color/bTextColor09"
+                            android:textSize="16sp"
+                            />
+
+
+                        <LinearLayout
+                            android:id="@+id/textView_jobCompanyDetails"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal"
+                            android:visibility="visible" >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/imageExperience"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/font_icon_color_code"
+                                    android:textSize="14sp"
+                                    android:paddingBottom="2dp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_jobExperience"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dp"
+                                    android:text="1-2 Years"
+                                    android:textColor="@color/font_icon_color_code"
+                                    android:textSize="14sp"
+                                    android:maxLines="1"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="top"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:id="@+id/imageView_menu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:textColor="@color/font_icon_color_code"
+                                    android:textSize="14sp"
+                                    android:paddingBottom="3dp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_jobLocation"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="4dp"
+                                    android:maxLines="1"
+                                    android:text=""
+                                    android:textColor="@color/font_icon_color_code"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--<ImageView
+                        android:id="@+id/arrowImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:paddingTop="7dp"
+                        android:src="@drawable/arrow"
+                       />-->
+
+                    <TextView
+                        android:id="@+id/tv_jobCreatedDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/container_layout"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignRight="@+id/arrowImage"
+                        android:gravity="right"
+                        android:visibility="gone"
+                        android:maxLines="1"
+                        android:text="18/12"
+                        android:textColor="@color/bTextColor02"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_jobProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_jobCompanyDetails"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:id="@+id/layout_jobDescription1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_app_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="16dp">
+
+                    <Button
+                        android:id="@+id/app_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:background="@drawable/appctn_bt"
+                        android:textColor="@color/green_clr"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:textStyle="normal"
+                        android:text="@string/application_lbl"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/divpix01"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/separator_color_code"
+                android:scaleType="fitXY" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp">
+
+                <TextView
+                    android:id="@+id/posted_job_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/posted_by_lbl"
+                    android:textColor="@color/font_icon_color_code"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="1dp"/>
+
+                <TextView
+                    android:id="@+id/posted_date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/posted_job_text"
+                    android:textColor="@color/font_icon_color_code"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:paddingBottom="1dp"/>
+
+
+                <Button
+                    android:id="@+id/status_button"
+                    android:text="@string/published_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="@color/unpublished"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:paddingBottom="1dp"/>
+
+                <TextView
+                    android:id="@+id/publish_iv"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textSize="18sp"
+                    android:textColor="#757575"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="3dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

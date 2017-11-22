@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/rl_coordinator_newcandidate">
+
+
+    <TextView
+        android:id="@+id/no_candidate_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_below="@+id/sel_card_view"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:background="@color/separator_color_code">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    // Need to work
+
+   <!-- <LinearLayout
+        android:id="@+id/popup_layout_candidate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_sel_card_view"
+        android:orientation="vertical"
+        android:visibility="gone">-->
+
+    <!--</LinearLayout>-->
+
+    <include
+        android:id="@+id/toolbar_newcandidatelistactivity"
+        layout="@layout/new_tool_bar" />
+
+
+
+    <!--<LinearLayout
+        android:id="@+id/rl_sel_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_newcandidatelistactivity"
+        android:orientation="vertical">-->
+
+
+    <!--</LinearLayout>-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        app:backgroundTint="@color/fab_btn_clr"
+        app:borderWidth="0dp"
+        app:elevation="5dp"
+        app:fabSize="auto"
+        app:pressedTranslationZ="12dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/sel_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        card_view:cardBackgroundColor="@color/WhiteColor"
+        card_view:cardElevation="2dp"
+        android:layout_below="@+id/toolbar_newcandidatelistactivity"
+        android:layout_alignParentStart="true"
+        >
+
+        <RelativeLayout
+            android:id="@+id/sel_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="16dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/title_text_view_candidate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="View  "
+                android:textColor="@color/bTextColor09"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/title_text_newcandidate"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/title_text_view_candidate"
+                android:background="@drawable/job_bt"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="#757575"
+                android:textSize="14sp"
+                android:paddingBottom="2dp"/>
+
+
+            <ImageView
+                android:id="@+id/on_off_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/down_arrow" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/popup_layout_candidate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#fcfcfc"
+        android:visibility="gone"
+        android:layout_below="@+id/sel_card_view"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="13dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+           >
+
+            <LinearLayout
+                android:id="@+id/iteam_layout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btn_iv01_candidate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/job_bt"
+                    android:gravity="center"
+                    android:text="Unread"
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+
+
+                <Button
+                    android:id="@+id/btn_iv05_candidate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@id/btn_iv01_candidate"
+                    android:background="@drawable/job_bt"
+                    android:gravity="center"
+                    android:text="Magic Sort"
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+
+                <!--<Button
+                    android:id="@+id/btn_iv02_candidate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_toRightOf="@id/btn_iv05_candidate"
+                    android:background="@drawable/job_bt"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Shortlisted"
+                    android:textColor="#757575"
+                    android:textSize="14sp" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iteam_layout02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_iv03_candidate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/job_bt"
+                    android:gravity="center"
+                    android:text="Rejected"
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+
+                <Button
+                    android:id="@+id/btn_iv04_candidate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_below="@id/btn_iv01_candidate"
+                    android:background="@drawable/job_bt"
+                    android:gravity="center"
+                    android:text="Saved"
+                    android:textColor="#757575"
+                    android:textSize="14sp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"/>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_iv02_candidate"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_toRightOf="@id/btn_iv05_candidate"
+                android:background="@drawable/job_bt"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Shortlisted"
+                android:textColor="#757575"
+                android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

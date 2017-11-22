@@ -1,0 +1,350 @@
+<resources>
+    <string name="title_activity_main_screen">MainScreen</string>
+    <string name="rec_app_lbl">engineeristic recruiter app</string>
+    <string name="app_name">engineeristic Recruiter</string>
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+
+    <string name="my_jobs_lbl">My Jobs</string>
+    <string name="my_profile_lbl">My Profile</string>
+    <string name="my_chat_lbl">My Chat</string>
+    <string name="start_chat_lbl">Start Chat</string>
+    <string name="rate_app_lbl">Rate App</string>
+    <string name="share_lbl">Share App</string>
+    <string name="Logout_lbl">Logout</string>
+
+    <string name="refresh_jobs_lbl">Refresh Jobs</string>
+    <string name="refresh_msg_lbl"> You want to refresh this job</string>
+    <string name="not_refresh_msg">Sorry this job can\'t be refresh</string>
+    <string name="not_published_msg">Sorry this job can\'t be published</string>
+    <string name="cancle_lbl">Cancel</string>
+    <string name="OK_lbl">OK</string>
+
+    <string name="retry_lbl">Retry</string>
+    <string name="network_lbl">Network</string>
+    <string name="error_lbl">Error</string>
+
+
+    <string name="edit_profile_lbl">Edit Profile</string>
+    <string name="workExperience_lbl">Work Experience</string>
+    <string name="education_qualification_lbl">Educational Qualification</string>
+    <string name="shorlist_lbl">Shortlist</string>
+    <string name="reject_lbl">Reject</string>
+    <string name="save_lbl">Save</string>
+    <string name="call_lbl">Call</string>
+    <string name="view_lbl">View</string>
+    <string name="download_lbl">Download</string>
+    <string name="cover_letter_lbl">Cover letter</string>
+    <string name="chat_lbl">Chat</string>
+    <string name="comment_lbl">Comment</string>
+    <string name="add_comment_lbl">Add Comment</string>
+    <string name="submit_lbl">Submit</string>
+    <string name="month_lbl">Month</string>
+    <string name="lacs_cap_lbl">Lacs</string>
+    <string name="present_lbl">Present</string>
+    <string name="resume_lbl">Resume</string>
+    <string name="to_lbl">To</string>
+    <string name="ok_lbl">Ok</string>
+    <string name="candidates_found_lbl">Candidates found.</string>
+    <string name="call_candidates_lbl">Call Candidates</string>
+    <string name="interview_invite_lbl">Send Interview Invite</string>
+
+    <string name="loading_lbl">Loading...</string>
+    <string name="immediately_lbl">Immediately </string>
+    <string name="confidential_lbl">Confidential</string>
+    <string name="enter_email_lbl">Enter Email</string>
+    <string name="post_comment_lbl">Post Comment</string>
+    <string name="enter_comment_lbl">Enter Comment</string>
+    <string name="more_info_lbl">More Information</string>
+    <string name="cv_not_found_lbl">CoverLetter not found</string>
+
+
+    <string name="location_lbl">Current Location</string>
+    <string name="preferred_location_lbl">Preferred Location</string>
+    <string name="current_location_lbl">Current Location</string>
+    <string name="current_salary_lbl">Current Salary</string>
+    <string name="expected_salary_lbl">Expected Salary</string>
+    <string name="notice_period_lbl">Notice Period</string>
+
+    <string name="msg_no_network">Sorry, you are not connected to the Internet. Please check your connection settings</string>
+    <string name="msg_connection_timout">Connection Timeout Click here to reload</string>
+    <string name="msg_server_error">Internal server error occured.Please try after sometime</string>
+    <string name="msg_enter_name">Please enter your name</string>
+    <string name="msg_enter_valid_number">Please enter a valid phone number</string>
+    <string name="msg_enter_organization">Please enter the organization</string>
+    <string name="msg_enter_designation">Please enter the designation</string>
+    <string name="msg_enter_location">Please select the location</string>
+
+    <string name="enter_valid_emailpass_message">Please enter valid email and password </string>
+    <string name="data_not_message">No applications found</string>
+
+    <string name="msg_confirm_password_message">Password and Confirm Password should be same</string>
+    <string name="msg_original_password">Please enter original password</string>
+    <string name="msg_new_password">Please enter new password</string>
+    <string name="msg_verify_password">Please enter verify password</string>
+    <string name="msg_verify_password_same">New password and verify Password should be same</string>
+    <string name="msg_verify_password_diff">Original password and verify Password should not be same</string>
+    <string name="msg_password_char">should be atleast five characters</string>
+    <string name="comment_submited_succes_message">Comment submitted successfully</string>
+    <string name="forgot_pass_screen_message01">Please enter your email id. We will send you a link to reset your password.</string>
+    <string name="filter_removed_msg">All filters have been removed</string>
+    <string name="download_cv_msg">Resume has been saved in Download folder.</string>
+    <string name="download_cv_error_msg">There was an error while trying to download this resume. Please try again.\n</string>
+
+    <string name="unpublish_reasons_lbl">Unpublish Reasons</string>
+    <string name="published_lbl">published</string>
+    <string name="updated_lbl">updated</string>
+    <string name="rejected_lbl">rejected</string>
+    <string name="pending_lbl">pending</string>
+    <string name="unpublished_lbl">Unpublished</string>
+    <string name="enter_email_add_lbl">Enter email address</string>
+    <string name="sendlink_lbl">Send Link</string>
+    <string name="view_now_lbl">View Now</string>
+
+    <string name="viewed_lbl">Viewed</string>
+    <string name="times_lbl">times</string>
+    <string name="last_login_lbl">Last Login</string>
+    <string name="emailid_lbl">Email Id</string>
+    <string name="phone_number_lbl">Phone Number</string>
+    <string name="type_lbl">Type</string>
+    <string name="Location_lbl">Location</string>
+    <string name="company_URL_lbl">Company URL</string>
+    <string name="notification_setting_lbl">Notification Settings</string>
+    <string name="instant_lbl">Instant</string>
+    <string name="daily_digest_mail_lbl">Daily digest mail</string>
+    <string name="about_lbl">About</string>
+    <string name="profile_lbl">Profile</string>
+
+    <string name="cap_photo_lbl">Capture Photo</string>
+    <string name="choose_gallery_lbl">Choose from Gallery</string>
+    <string name="cancel_lbl">Cancel</string>
+    <string name="add_photo_lbl">Add Photo!</string>
+    <string name="Select_lbl">Select</string>
+    <string name="name_lbl">Name</string>
+    <string name="phone_lbl">Phone</string>
+    <string name="email_lbl">Email</string>
+    <string name="organization_lbl">Organization</string>
+    <string name="designation_lbl">Designation</string>
+
+    <string name="rec_firm_lbl">Recruitment Firm</string>
+    <string name="direct_emp_lbl">Direct Employer</string>
+    <string name="original_pass_lbl">Original Password</string>
+    <string name="new_pass_lbl">New Password</string>
+    <string name="verify_pass_lbl">Verify New Password</string>
+    <string name="change_password_lbl">Change Password</string>
+    <string name="login_lbl">LOGIN</string>
+    <string name="register_lbl">Sign up</string>
+    <string name="submit_cap_lbl">SUBMIT</string>
+    <string name="for_pass_que_lbl">Forgot Password?</string>
+    <string name="forgot_password_lbl">Forgot Password</string>
+    <string name="new_recruiter_reg_lbl">New Recruiter Registration</string>
+    <string name="exp_in_yrs_lbl">Experience(in yrs)</string>
+    <string name="institute_lbl">Institute</string>
+    <string name="location01_lbl">Location</string>
+    <string name="batch_lbl">Batch</string>
+    <string name="salary_lbl">Salary</string>
+    <string name="gender_lbl">Gender</string>
+
+    <string name="filter_lbl">Filter</string>
+    <string name="reset_lbl">Reset</string>
+    <string name="apply_lbl">Apply</string>
+    <string name="application_lbl">Application</string>
+    <string name="posted_by_lbl">Posted on</string>
+    <string name="industry_lbl">Industry</string>
+    <string name="functional_lbl">Functional Area</string>
+    <string name="min_experience_lbl">Min Experience</string>
+    <string name="max_experience_lbl">Max Experience</string>
+    <string name="max_salary_lbl">Max Salary</string>
+    <string name="min_salary_lbl">Min Salary</string>
+    <string name="min_batch_lbl">Min Batch</string>
+    <string name="max_batch_lbl">Max Batch</string>
+    <string name="male_lbl">Male</string>
+    <string name="female_lbl">Female</string>
+    <string name="not_mentioned_lbl">Not Mentioned</string>
+    <string name="all_lbl">All</string>
+
+    <string name="published_jobs">Published Jobs</string>
+    <string name="unpublished_jobs">Unpublished Jobs</string>
+    <string name="updated_jobs">Updated Jobs</string>
+    <string name="rejected_jobs">Rejected Jobs</string>
+    <string name="pending_jobs">Pending Jobs</string>
+
+    <string name="search_by_industry_lbl">Search by industry</string>
+    <string name="search_by_farea_lbl">Search by functional area</string>
+    <string name="search_by_institute_lbl">Search by institute</string>
+    <string name="search_by_location_lbl">Search by location</string>
+    <string name="any_lbl">Any</string>
+    <string name="yrs_lbl">yrs</string>
+    <string name="lacs_lbl">lacs</string>
+    <string name="give_feedback_lbl">Give Feedback</string>
+    <string name="feedback_lbl">Feedback</string>
+    <string name="plz_wait_lbl">Please wait...</string>
+
+    <string name="invalid_email_message">Invalid E-mail Address</string>
+    <string name="password_sent_message">Password link has been sent to your E-mail</string>
+    <string name="enter_name_message">Please enter your name</string>
+    <string name="enter_valid_number_message">Please enter a valid phone number</string>
+    <string name="enter_password_message">Password should be atleast five characters</string>
+    <string name="confirm_password_message_message">Password and Confirm Password should be same</string>
+    <string name="enter_designation_message">Please enter the designation</string>
+    <string name="enter_organization_message">Please enter the organization</string>
+    <string name="please_select_type_message">Please select type</string>
+    <string name="field_mandatory_message">Every field mandatory</string>
+
+    <string name="tell_us_wht_love_message">Tell us what you love</string>
+    <string name="plz_enter_feedback_message">Please enter your Feedback.</string>
+    <string name="are_you_sure_message">Are you sure?</string>
+    <string name="logout_que_message">Do you want to logout?</string>
+
+    <string name="send_message">Write a message...</string>
+    <string name="dialog_please_wait">Please Wait.. </string>
+
+
+    <string-array name="feedback_items_array">
+        <item>Tell us what you love.</item>
+        <item>Tell us what you dislike.</item>
+        <item>Report a bug.</item>
+        <item>Request a help.</item>
+    </string-array>
+
+
+    <string-array name="candidates_tabs_array">
+        <!--<item>All</item>-->
+        <item>Unread</item>
+        <item>Magic Sort</item>
+        <item>Shortlisted</item>
+        <item>Rejected</item>
+        <item>Saved</item>
+    </string-array>
+
+    <string-array name="Reasons">
+        <item>This position has been closed.</item>
+        <item>This position has gone on hold.</item>
+        <item>I have received enough responses for this position.</item>
+        <item>Not Disclosed by the recruiter.</item>
+        <item>This position has been closed via engineeristic.</item>
+        <item>This position has been closed via other channel.</item>
+
+
+    </string-array>
+
+
+    <array name="jobs_tabs_icon_array">
+        <item>@drawable/tab_all</item>
+        <item>@drawable/tab_publish</item>
+        <item>@drawable/tab_update</item>
+        <item>@drawable/tab_reject</item>
+        <item>@drawable/tab_pending</item>
+        <item>@drawable/tab_unpublish</item>
+    </array>
+
+    <array name="jobs_seltabs_icon_array">
+        <item>@drawable/tab_all_hover</item>
+        <item>@drawable/tab_publish_hover</item>
+        <item>@drawable/tab_update_hover</item>
+        <item>@drawable/tab_reject_hover</item>
+        <item>@drawable/tab_pending_hover</item>
+        <item>@drawable/tab_unpublish_hover</item>
+    </array>
+
+    <array name="candidates_tabs_icon_array">
+        <item>@drawable/tab_all</item>
+        <item>@drawable/tab_unread</item>
+        <item>@drawable/tab_magic_short</item>
+        <item>@drawable/tab_shortlist</item>
+        <item>@drawable/tab_save</item>
+        <item>@drawable/tab_reject</item>
+    </array>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+
+</resources>

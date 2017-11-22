@@ -1,0 +1,34 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <item
+        android:id="@+id/action_profile_resume_chat"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="always"
+        android:icon="@drawable/chat"/>
+
+    <item
+        android:id="@+id/action_profile_resume_save"
+        android:orderInCategory="100"
+        android:title=""
+        app:showAsAction="always"
+        android:icon="@drawable/save"/>
+
+    <item
+        android:id="@+id/action_profile_resume_comment"
+        android:orderInCategory="100"
+        android:title="Add Comment"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_profile_resume_contactinfo"
+        android:orderInCategory="100"
+        android:title="Contact Info"
+        app:showAsAction="never"
+        />
+
+</menu>
